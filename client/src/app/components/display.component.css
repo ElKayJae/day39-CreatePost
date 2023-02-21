@@ -1,0 +1,10 @@
+.space-apart{
+    display:flex;
+}
+.vote-buttons{
+    margin-right: 2%;
+}
+
+.display-image{
+    width: 50vw
+}

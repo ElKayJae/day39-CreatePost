@@ -1,0 +1,23 @@
+<h1>Display</h1>
+
+<div *ngIf="post">
+   
+    <h2>Post Id: <span [innerText]="post.postid"></span></h2>
+
+    <h2>Post Title: <span [innerText]="post.title"></span></h2>
+
+    <img class="display-image" [src]="post.imageurl" >
+
+    <h4>Text:</h4>
+    <p [innerText]="post.text"></p>
+    <div class="space-apart">
+        <button class="vote-buttons" (click)="like()">
+            <span>{{post.like}} likes</span>
+        </button>
+        
+        <button (click)="dislike()">
+            <span>{{post.dislike}} dislikes</span>
+        </button>
+    </div>
+
+</div>

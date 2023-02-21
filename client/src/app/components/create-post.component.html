@@ -1,0 +1,16 @@
+<form method="post" [formGroup]="form" (ngSubmit)="uploadImage()">
+    <table>
+        <tr><img [src]="url" class="imagePreview"></tr>
+        <tr><input type="file" formControlName="file" (change)="selectImage($event)"></tr> 
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" formControlName="title"></td>
+        </tr>
+        <tr>
+            <td>Text:</td>
+            <td><textarea formControlName="text" cols="30" rows="3"></textarea></td>
+        </tr>
+    </table>
+    <button type="submit">Upload</button>
+</form>
+
